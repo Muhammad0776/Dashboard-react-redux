@@ -7,7 +7,6 @@ import PostsWrapper from './PostsWrapper'
 
 const Posts = () => {
     const { menu } = useParams();
-    console.log("todoni ichida", menu);
 
     const dispatch = useDispatch();
 
@@ -19,7 +18,13 @@ const Posts = () => {
 
     return (
         <PostsWrapper>
-
+            <h2>Posts</h2>
+            <div>
+                {data.map(v => <div className="shadow d-flex">
+                    <span>{v.userId}</span>
+                    <p>{v.title}</p>
+                </div>)}
+            </div>
         </PostsWrapper>
     )
 }

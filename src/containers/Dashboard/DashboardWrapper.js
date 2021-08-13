@@ -1,14 +1,27 @@
 import styled from "styled-components";
 
 const DashboardWrapper = styled.div`
-    display: flex;
+        /* background-image: url(../public/Frame.png);
+        background-position: center;
+        background-size: cover; */
+        display: flex;
+
     .sidebar{
-        width: 300px;
-        /* background-color: white; */
-        padding: 20px;
+        flex-shrink: 0;
+        width: 50px;
+        overflow: hidden;
+        /* background-image: linear-gradient(to right top, #051937, #10173a, #1c133b, #280e3a, #330537); */
+        transition: 0.3s;
         height: 100vh;
         position: sticky;
         top: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &.show{
+            width: 300px;
+            padding: 20px;
+        }
         p{
             padding: 10px 20px;
             box-sizing: border-box;
@@ -20,27 +33,57 @@ const DashboardWrapper = styled.div`
             text-transform: uppercase;
             font-family: "Public Sans", sans-serif;
         }
-        ul{
+
+        .toggle{
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            text-align: center;
+            transition: 0.3s;
+
+            &:hover{
+                background: rgba( 187, 187, 187, 0.25 );
+                backdrop-filter: blur( 4px );
+                -webkit-backdrop-filter: blur( 4px );
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+            }
+
+        }
+
+        nav{
             li{
                 a{
-                    display: block;
-                    padding: 10px 20px;
-                    border-radius: 10px;
-                    background-color: white;
-                    margin-bottom: 10px;
-                    color: #6f7e8a;
-                    &:hover{
-                        background-color: #F3F4F5;
-                    }
+                    .MuiButtonBase-root{
+                        display: block !important;
+                        padding: 10px 20px  !important;
+                        border-radius: 6px  !important;
+                        background-color: rgba(255, 255, 255, 0.3)  !important;
+                        margin-bottom: 10px  !important;
+                        transition: 0.3s !important;
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3) !important;
+                        min-width: 200px !important;
+                        overflow: hidden !important;
+                        &:hover{
+                            background-color: rgba(255, 255, 255, 0.5)  !important;
+                        }
                 }
+
+                &.active{
+                        .MuiButtonBase-root{
+                            background-color: blue  !important;
+                            color: white  !important;
+                        }
+                    }
             }
         }
     }
+}
     .rightside{
         flex: 1;
         position: relative;
         header{
-            padding: 10px;
+            padding: 20px;
             position: sticky;
             top: 0;
             background: rgba( 255, 255, 255, 0.25 );
@@ -53,6 +96,7 @@ const DashboardWrapper = styled.div`
                 height: 30px;
                 border-radius: 100%;
                 text-align: center;
+                color: #111;
                 &:hover{
                     background-color: #F3F4F5;
                     cursor: pointer;

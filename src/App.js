@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import Home from './pages/Home';
@@ -10,12 +10,10 @@ function App() {
   return (
     <Router>
       <Provider store={store}>
-        <div className="App">
-          <Switch>
-            <Route path="/" exact> <Home /> </Route>
-            <Route path="/dashboard/:menu"> <Dashboards /> </Route>
-          </Switch>
-        </div>
+        <Switch>
+          <Route path="/" exact>  <Redirect to="/dashboard/home" /> </Route>
+          <Route path="/dashboard/:menu"> <Dashboards /> </Route>
+        </Switch>
       </Provider>
     </Router>
 
