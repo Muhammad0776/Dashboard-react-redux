@@ -3,15 +3,14 @@ import { Link, useParams } from 'react-router-dom'
 import DashboardWrapper from './DashboardWrapper'
 import { Button as div, List, ListItem } from '@material-ui/core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChartBar } from '@fortawesome/free-regular-svg-icons'
+// import { faChartBar } from '@fortawesome/free-regular-svg-icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleMenu } from '../../redux/actions'
-import { faCircleNotch, faHome, faImages, faNewspaper, faShekelSign, faTasks, faUsers, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faCircleNotch, faHome, faImages, faNewspaper, faShekelSign, faTasks, faUserFriends, faUsers, faVideo } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components'
 import { Slide } from 'react-awesome-reveal'
 import { BiSearchAlt } from 'react-icons/bi'
 import { MdCall } from "react-icons/md";
-import { faUserFriends } from "react-icons/fa";
 
 
 const menus = [

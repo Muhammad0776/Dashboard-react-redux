@@ -1,5 +1,6 @@
 const initialState = {
     isSidebarShow: true,
+    Albums: [],
     Posts: [],
     todos: []
 };
