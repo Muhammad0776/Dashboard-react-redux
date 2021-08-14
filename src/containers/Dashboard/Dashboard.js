@@ -74,7 +74,7 @@ const Dashboard = ({ children }) => {
                     <div className="text-end d-flex justify-content-center align-items-center">
                         <span></span>
                         <div className="others me-4"><MdCall /></div>
-                        <div className="others"><faUserFriends /></div>
+                        <div className="others"><FontAwesomeIcon icon={faUserFriends} /></div>
                         <a href="#" className="user"><img src="https://res.cloudinary.com/minimal-ui/image/upload/v1614655910/upload_minimal/avatar/minimal_avatar.jpg" alt="" /></a>
                     </div>
                 </header>

@@ -19,7 +19,13 @@ const Albums = () => {
 
     return (
         <AlbumsWrapper>
-
+            <h2>Albums</h2>
+            {data.map(v => <div className="shadow rounded d-flex mb-3">
+                <div className="card">
+                    <span className="me-3">{v.id}</span>
+                    <p>{v.title}</p>
+                </div>
+            </div>)}
         </AlbumsWrapper>
     )
 }

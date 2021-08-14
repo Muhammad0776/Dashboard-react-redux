@@ -20,8 +20,8 @@ const Posts = () => {
         <PostsWrapper>
             <h2>Posts</h2>
             <div>
-                {data.map(v => <div className="shadow d-flex">
-                    <span>{v.userId}</span>
+                {data.map(v => <div className="shadow rounded d-flex mb-3">
+                    <span className="me-3">{v.userId}</span>
                     <p>{v.title}</p>
                 </div>)}
             </div>
