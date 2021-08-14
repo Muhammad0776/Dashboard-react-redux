@@ -17,6 +17,11 @@ const DashboardWrapper = styled.div`
         top: 0;
         padding-top: 20px;
         padding-bottom: 20px;
+    &:hover{
+        width: 300px;
+        padding: 20px;
+    }
+    
 
         &.show{
             width: 300px;
@@ -32,6 +37,14 @@ const DashboardWrapper = styled.div`
             letter-spacing: 1.1px;
             text-transform: uppercase;
             font-family: "Public Sans", sans-serif;
+            position: absolute;
+            top: 80px;
+            left: 100px;
+        }
+
+        .iconLogo{
+            width: 38px;
+            height: 38px;
         }
 
         .toggle{
@@ -41,6 +54,9 @@ const DashboardWrapper = styled.div`
             border-radius: 100%;
             text-align: center;
             transition: 0.3s;
+            position: absolute;
+            top: 30px;
+            left: 250px;
 
             &:hover{
                 background: rgba( 187, 187, 187, 0.25 );
@@ -60,6 +76,7 @@ const DashboardWrapper = styled.div`
                         border-radius: 6px  !important;
                         background-color: rgba(255, 255, 255, 0.3)  !important;
                         margin-bottom: 10px  !important;
+                        color: #798793 !important;
                         transition: 0.3s !important;
                         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3) !important;
                         min-width: 200px !important;

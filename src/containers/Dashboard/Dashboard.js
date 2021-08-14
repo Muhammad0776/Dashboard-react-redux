@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChartBar } from '@fortawesome/free-regular-svg-icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleMenu } from '../../redux/actions'
-import { faCircleNotch, faHome, faImages, faNewspaper, faTasks, faUsers, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faCircleNotch, faHome, faImages, faNewspaper, faShekelSign, faTasks, faUsers, faVideo } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components'
 import { Slide } from 'react-awesome-reveal'
 import { BiSearchAlt } from 'react-icons/bi'
@@ -34,7 +34,8 @@ const Dashboard = ({ children }) => {
         <DashboardWrapper>
             <div className={`sidebar border-end ${show && "show" || ""}`}>
                 <div className="d-flex justify-content-between mb-5">
-                    <img src="https://t4.ftcdn.net/jpg/03/75/38/73/360_F_375387396_wSJM4Zm0kIRoG7Ej8rmkXot9gN69H4u4.jpg" className="w-25" alt="" />
+                    {/* <img src="https://t4.ftcdn.net/jpg/03/75/38/73/360_F_375387396_wSJM4Zm0kIRoG7Ej8rmkXot9gN69H4u4.jpg" className="w-25" alt="" /> */}
+                    <FontAwesomeIcon className="iconLogo" icon={faShekelSign} />
 
                     <div className="toggle" onClick={() => toggleMenu(dispatch)} variant="contained" disableElevation >
                         <FontAwesomeIcon icon={faCircleNotch} />
