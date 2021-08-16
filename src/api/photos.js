@@ -1,8 +1,8 @@
 const axios = require('axios');
 
-export const getAlbums = async () => {
+export const getPhotos = async () => {
     try {
-        const res = await axios.get(`https://jsonplaceholder.typicode.com/albums?_limit=12`);
+        const res = await axios.get(`https://jsonplaceholder.typicode.com/photos?_limit=14`);
         return res.data;
     } catch (error) {
         console.error(error);

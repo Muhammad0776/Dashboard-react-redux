@@ -17,6 +17,7 @@ const DashboardWrapper = styled.div`
         top: 0;
         padding-top: 20px;
         padding-bottom: 20px;
+        margin: 10px;
         transition: 0.5s;
     &:hover{
         width: 300px;

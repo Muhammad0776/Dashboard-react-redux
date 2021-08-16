@@ -19,7 +19,19 @@ const Photos = () => {
 
     return (
         <PhotosWrapper>
-
+            <h2>Photos</h2>
+            {data.map(v => <div className="row">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-6">
+                    <div className="card rounded mb-4">
+                        <img src={v.thumbnailUrl} alt="not photo" />
+                        <div className="d-flex">
+                            <span>{v.albumId}.</span>
+                            <p>{v.id}</p>
+                            <p>{v.title}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>)}
         </PhotosWrapper>
     )
 }
