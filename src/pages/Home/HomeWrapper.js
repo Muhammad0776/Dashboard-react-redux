@@ -23,22 +23,37 @@ const HomeWrapper = styled.div`
 }
 
 .cards {
-    border-radius: 20px;
+    border-radius: 25px;
 }
 .card1{
     background-color: #D1FFFC;
+    background: linear-gradient(315deg, #bce6e3, #e0ffff);
+    box-shadow:  -8px -8px 7px #b8e0de,
+             8px 8px 7px #eaffff;
 }
 .card2{
     background-color: #D0F2FF;
+    background: linear-gradient(315deg, #bbdae6, #dfffff);
+    box-shadow:  -8px -8px 7px #b7d5e0,
+             8px 8px 7px #e9ffff;
 }
 .card3{
     background-color: #FFF7CD;
+    background: linear-gradient(315deg, #e6deb9, #ffffdb);
+    box-shadow:  -8px -8px 7px #e0d9b4,
+             8px 8px 7px #ffffe6;
 }
 .card4{
     background-color: #FFE7D9;
+    background: linear-gradient(315deg, #e6d0c3, #fff7e8);
+    box-shadow:  -8px -8px 7px #e0cbbf,
+             8px 8px 7px #fffff3;
 }
 .card5{
     background-color: #F2F346;
+    background: linear-gradient(315deg, #dadb3f, #ffff4b);
+    box-shadow:  -8px -8px 7px #d5d63e,
+             8px 8px 7px #ffff4e;
 }
 
 .div{
